@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      display: grid;
+      place-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      grid-template-columns: 1fr 2fr;
+      display: grid;
+      width: 1200px;
+      /* margin: auto; */
+      /* height: 100vh; */
+      /* place-items: center; */
+      gap: 10px;
+    }
+
+
+
+    .left {
+      background-color: red;
+      display: grid;
+      place-items: center;
+
+    }
+
+    .right {
+      background-color: blue;
+      display: grid;
+      place-items: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="left">
+      <h3>left</h3>
+    </div>
+
+    <div class="right">
+      <h3>right</h3>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
