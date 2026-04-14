@@ -1,9 +1,0 @@
-{
-  "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
-  "liveServer.settings.CustomBrowser": "brave",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000,
-  "prettier.requireConfig": false
-}

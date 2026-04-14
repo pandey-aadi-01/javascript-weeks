@@ -134,21 +134,31 @@ h3 {
 
 .dwl-section button {
   background-color: #feffff;
-  /* Keep this blue */
-  color: white;
+  color: rgb(37, 13, 13);
   border: none;
+  font-size: 16px;
   padding: 10px 20px;
+  width: 314px;
+  height: 51px;
+  display: block;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: auto;
+  margin-top: auto;
+  margin-bottom: 6px;
   border-radius: 4px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
 }
-
 
 .a-links {
   display: flex;
   justify-content: center;
   gap: 10px;
   color: #e6eefa;
+  font-size: 12px;
+  margin-top: 16px;
+  margin-bottom: 12px;
 
 }
 
@@ -157,4 +167,78 @@ h3 {
   justify-content: center;
   gap: 10px;
   color: #e6eefa;
+}
+
+.third-line {
+  align-items: center;
+  justify-self: center;
+  font-size: 10px;
+  font-weight: 500;
+  color: #c9d1d9;
+  letter-spacing: -0.3px;
+}
+
+.box {
+  background-color: #000103;
+
+  padding: 20px;
+  width: 333px;
+  height: 132px;
+  align-items: center;
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #030c0c;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.header {
+  width: 1200px;
+  gap: 50px;
+  margin: auto;
+  /* display: grid;
+          grid-template-columns: 1fr 2fr; */
+  display: flex;
+  /* gap: 200px; */
+}
+
+.left-center {
+  background: #0d1117;
+  color: #ffffff;
+  flex: 1;
+
+
+}
+
+.right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background: #0d1117;
+  color: #ffffff;
+  flex: 2;
+
+}
+
+.img-of-language {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.img-of-language img {
+  width: 20px;
+  height: 20px;
+}
+
+.v-text {
+  font-size: 14px;
+}
+
+p {
+  color: #c9d1d9;
+  font-size: 14px;
 }
