@@ -1,7 +1,0 @@
-node_modules
-dist
-.vscode
-.git
-
-# Ignore built files
-**/*.min.*
