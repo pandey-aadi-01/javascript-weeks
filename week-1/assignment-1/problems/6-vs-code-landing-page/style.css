@@ -242,3 +242,12 @@ p {
   color: #c9d1d9;
   font-size: 14px;
 }
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+footer p {
+  margin: 0;
+}
