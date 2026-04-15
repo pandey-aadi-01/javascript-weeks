@@ -1,0 +1,249 @@
+body {
+  font-family: "Proxima", "Proxima Nova", sans-serif;
+  background-color: oklch(15.84% .015 346.32);
+}
+
+.navbar {
+  width: 60%;
+  height: 3.9vh;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  padding: 10px 20px;
+  margin: auto;
+  border-radius: 25px;
+  background: #f5c6d6;
+
+  margin-top: 20px;
+  color: #f5c6d6;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  /* Glow shadow */
+  /* box-shadow: 0 8px 32px rgba(255, 0, 150, 0.2);
+  transition-duration: 0.5s; */
+
+}
+
+.left {
+  margin-right: auto;
+}
+
+a,
+button {
+  color: #f2c6f5;
+  margin: 5px;
+}
+
+button {
+  background-color: oklch(15.84% .015 346.32);
+  border: none;
+  padding: 5px 10px;
+
+  cursor: pointer;
+  border-radius: 8px;
+
+  background-color: #a01245;
+  color: #f5c6d6;
+  padding: 9px 12px;
+
+}
+
+.icon {
+  width: 35px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  background-color: oklch(46.07% .1853 4.0994);
+  box-shadow: 0 8px 10px rgba(255, 0, 149, 0.66);
+}
+
+.live-dot {
+  font-size: 12px;
+  padding: 2px 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px solid #f5c6d6;
+  width: 6%;
+  margin: auto;
+  margin-top: 2rem;
+  color: #f5c6d6;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+
+  border: 0.1px solid #f5c6d656;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+  color: #e3e1ea;
+  font-family: "proxima", sans-serif;
+  margin: auto;
+}
+
+.text {
+  font-size: 14px;
+  color: #fdd2f1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.normal-btn {
+  background-color: #a01245;
+  border: none;
+  padding: 9px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #f5c6d6;
+}
+
+.glass-btn {
+  /* border: none; */
+  padding: 9px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #f2c6f5;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lst-t {
+  font-size: 10px;
+  color: #f2c6f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.img {
+  width: 1104px;
+  height: 620px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 -8px 20px rgba(255, 0, 150, 0.3);
+}
+
+.Features {
+  background-color: #a01245;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #f2c6f5;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10rem;
+}
+
+.heading-txt {
+  font-size: 48px;
+  font-weight: 200;
+  text-align: center;
+  color: #e3e1ea;
+  font-family: "proxima", sans-serif;
+  margin: auto;
+  margin-top: 1.4rem;
+}
+
+.nrl-heading {
+  font-size: 14px;
+  font-weight: -8;
+  text-align: center;
+  color: #f2c6f5;
+  font-family: "proxima", sans-serif;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.glass-eff-of-three {
+  display: flex;
+  justify-content: center;
+
+  height: 45vh;
+
+  gap: 20px;
+  margin-top: 5rem;
+
+
+}
+
+
+.frist-glass {
+  padding: 9px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #f2c6f5;
+  width: 20%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-glass {
+  padding: 9px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #f2c6f5;
+  width: 20%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.third-glass {
+  padding: 9px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #f2c6f5;
+  width: 20%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.glass-eff-of-three i {
+  font-size: 48px;
+  margin: auto 0;
+}
+
+.glass-eff-of-three h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+}
+
+.glass-eff-of-three p {
+  text-align: center;
+  margin: 0.5rem 0 0 0;
+  font-size: 14px;
+}
