@@ -1,0 +1,481 @@
+# 📘 JavaScript Practice Questions (Objects + Arrays)
+
+> A collection of 40 JavaScript problems focused on Objects and Arrays.
+> Perfect for beginners to intermediate learners 💻
+
+---
+
+## 🔹 Basic Level (20 Questions)
+
+### 1. Sum values in object arrays
+
+**Input:**
+
+```js
+{ food: [10, 20, 30], travel: [5, 15], bills: [40, 60] }
+```
+
+**Output:**
+
+```js
+{ food: 60, travel: 20, bills: 100 }
+```
+
+---
+
+### 2. Count word occurrences in array
+
+**Input:**
+
+```js
+["apple", "banana", "apple", "orange", "banana", "apple"]
+```
+
+**Output:**
+
+```js
+{ apple: 3, banana: 2, orange: 1 }
+```
+
+---
+
+### 3. Swap keys and values of object
+
+**Input:**
+
+```js
+{ a: "x", b: "y", c: "z" }
+```
+
+**Output:**
+
+```js
+{ x: "a", y: "b", z: "c" }
+```
+
+---
+
+### 4. Find the largest value key
+
+**Input:**
+
+```js
+{ a: 10, b: 50, c: 20 }
+```
+
+**Output:**
+
+```
+b
+```
+
+---
+
+### 5. Flatten object of arrays
+
+**Input:**
+
+```js
+{ fruits: ["apple", "banana"], veggies: ["carrot", "pea"] }
+```
+
+**Output:**
+
+```js
+["apple", "banana", "carrot", "pea"]
+```
+
+---
+
+### 6. Group people by city
+
+**Input:**
+
+```js
+[
+  { name: "A", city: "Delhi" },
+  { name: "B", city: "Mumbai" },
+  { name: "C", city: "Delhi" }
+]
+```
+
+**Output:**
+
+```js
+{ Delhi: ["A", "C"], Mumbai: ["B"] }
+```
+
+---
+
+### 7. Filter object by values > 50
+
+```js
+Input: { a: 20, b: 60, c: 40, d: 90 }
+Output: { b: 60, d: 90 }
+```
+
+---
+
+### 8. Find student with highest average marks
+
+```js
+Input: { A: [80, 90], B: [70, 75, 85] }
+Output: A
+```
+
+---
+
+### 9. Unique values across all object arrays
+
+```js
+Input: { x: [1,2,3], y: [2,3,4], z: [4,5] }
+Output: [1,2,3,4,5]
+```
+
+---
+
+### 10. Pick only given keys from object
+
+```js
+Input: { name: "Rahul", age: 23, city: "Noida" }, ["name","city"]
+Output: { name: "Rahul", city: "Noida" }
+```
+
+---
+
+### 11. Sort object entries by values (ascending)
+
+```js
+Input: { a: 3, b: 1, c: 2 }
+Output: [["b",1], ["c",2], ["a",3]]
+```
+
+---
+
+### 12. Count number of keys in object
+
+```js
+Input: { a: 1, b: 2, c: 3 }
+Output: 3
+```
+
+---
+
+### 13. Capitalize string values inside object
+
+```js
+Input: { name: "alice", city: "delhi" }
+Output: { name: "Alice", city: "Delhi" }
+```
+
+---
+
+### 14. Convert object to query string
+
+```js
+Input: { name: "Alice", age: 25 }
+Output: "name=Alice&age=25"
+```
+
+---
+
+### 15. Count even and odd numbers in array
+
+```js
+Input: [1,2,3,4,5,6]
+Output: { even: 3, odd: 3 }
+```
+
+---
+
+### 16. Find common keys between two objects
+
+```js
+Input: { a: 1, b: 2, c: 3 }, { b: 4, c: 5, d: 6 }
+Output: ["b","c"]
+```
+
+---
+
+### 17. Convert array of objects to lookup by id
+
+```js
+Input: [{ id: 1, name: "A" }, { id: 2, name: "B" }]
+Output: { 1: { id:1, name:"A" }, 2: { id:2, name:"B" } }
+```
+
+---
+
+### 18. Check if all values in object are numbers
+
+```js
+Input: { a: 1, b: "hello", c: 3 }
+Output: false
+```
+
+---
+
+## 🔹 Intermediate Level (20 Questions)
+
+### 19. Sum all transactions per user
+
+```js
+Input:
+[
+  { user: "A", amount: 100 },
+  { user: "B", amount: 200 },
+  { user: "A", amount: 50 }
+]
+
+Output:
+{ A: 150, B: 200 }
+```
+
+---
+
+### 20. Transform API response to object (id → name)
+
+```js
+Input:
+[
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" }
+]
+
+Output:
+{ 1: "Alice", 2: "Bob" }
+```
+
+---
+
+### 21. Remove falsy values from object
+
+```js
+Input: { a: 0, b: null, c: "hello", d: undefined, e: 5 }
+Output: { c: "hello", e: 5 }
+```
+
+---
+
+### 22. Check for permissions from roles
+
+```js
+roles = { admin:["read","write"], user:["read"], staff:["write"] }
+checkRole = "user"
+action = "write"
+
+Output: false
+```
+
+---
+
+### 23. Transform array of orders into revenue per category
+
+```js
+Input:
+[
+  { category: "electronics", price: 100 },
+  { category: "clothes", price: 50 },
+  { category: "electronics", price: 200 }
+]
+
+Output:
+{ electronics: 300, clothes: 50 }
+```
+
+---
+
+### 24. Remove duplicate objects by id
+
+```js
+Input:
+[
+  { id: 1, name: "A" },
+  { id: 2, name: "B" },
+  { id: 1, name: "A" }
+]
+
+Output:
+[
+  { id: 1, name: "A" },
+  { id: 2, name: "B" }
+]
+```
+
+---
+
+### 25. Chunk object entries into groups of size
+
+```js
+Input: { a: 1, b: 2, c: 3, d: 4 }, size=2
+Output: [ [["a",1],["b",2]], [["c",3],["d",4]] ]
+```
+
+---
+
+### 26. Find longest string among object values
+
+```js
+Input: { a: "apple", b: "banana", c: "kiwi" }
+Output: banana
+```
+
+---
+
+### 27. Language translation transform (HARD)
+
+```js
+Input:
+{
+  en: { hello: "Hello", bye: "Goodbye" },
+  fr: { hello: "Bonjour", bye: "Au revoir" },
+  es: { hello: "Hola" }
+}
+
+Output:
+{
+  hello: { en: "Hello", fr: "Bonjour", es: "Hola" },
+  bye: { en: "Goodbye", fr: "Au revoir" }
+}
+```
+
+---
+
+### 28. Build index of ids grouped by category
+
+```js
+Input:
+[
+  { id: 1, category: "fruit" },
+  { id: 2, category: "veggie" },
+  { id: 3, category: "fruit" }
+]
+
+Output:
+{ fruit: [1,3], veggie: [2] }
+```
+
+---
+
+### 29. Remove deeply nested key from object
+
+```js
+Input: { a: { b: { c: 1, d: 2 } } }, remove "c"
+Output: { a: { b: { d: 2 } } }
+```
+
+---
+
+### 30. Check if two objects are deeply equal
+
+```js
+Input: { a: { x: 1, y: 2 } }, { a: { x: 1, y: 2 } }
+Output: true
+```
+
+---
+
+### 31. Deep flatten nested arrays inside object
+
+```js
+Input: { a: [1, [2, [3]]], b: [4, [5]] }
+Output: { a: [1,2,3], b: [4,5] }
+```
+
+---
+
+### 32. Find most repeated word across categories
+
+```js
+Input: { fruits: ["apple","apple","banana"], drinks: ["apple","tea"] }
+Output: apple
+```
+
+---
+
+### 33. Find intersection of all arrays in object
+
+```js
+Input: { a: [1,2,3], b: [2,3,4], c: [3,4,5] }
+Output: [3]
+```
+
+---
+
+### 34. Deep merge two nested objects
+
+```js
+Input:
+{ a: { x: 1, y: 2 } }
+{ a: { y: 3, z: 4 } }
+
+Output:
+{ a: { x: 1, y: 3, z: 4 } }
+```
+
+---
+
+### 35. Nested object destructuring
+
+```js
+Input: { user: { profile: { name: "Alice", age: 25 } } }
+Output: Alice 25
+```
+
+---
+
+### 36. Find top N keys by value
+
+```js
+Input: { a: 10, b: 50, c: 30, d: 40 }, N=2
+Output: ["b","d"]
+```
+
+---
+
+### 37. Sort array of objects by name then age
+
+```js
+Input:
+[
+  { name: "Alice", age: 30 },
+  { name: "Bob", age: 25 },
+  { name: "Alice", age: 22 }
+]
+
+Output:
+[
+  { name: "Alice", age: 22 },
+  { name: "Alice", age: 30 },
+  { name: "Bob", age: 25 }
+]
+```
+
+---
+
+### 38. Reconcile two lists (missing + extra items)
+
+```js
+Input:
+expected:["a","b","c"]
+actual:["b","c","d"]
+
+Output:
+{ missing:["a"], extra:["d"] }
+```
+
+---
+
+### 39. Merge two objects (override second)
+
+```js
+Input:
+{ a: 10, b: 20 }
+{ a: 5, c: 15 }
+
+Output:
+{ a: 5, b: 20, c: 15 }
+```
+
+---
+
