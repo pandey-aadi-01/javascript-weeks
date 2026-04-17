@@ -5,29 +5,76 @@
 // { food: [10, 20, 30], travel: [5, 15], bills: [40, 60] }
 
 
-const arrays = [
-  [5, 10, 15],
-  [2, 4, 6],
-  [7, 8, 9]
-];
+const data = {
+  food: [10, 20, 30],
+  travel: [5, 15],
+  bills: [40, 60]
+};
+const result = {};
 
-let sum = 0;
-let result ={};
-for( let i= 0; i< arrays.length; i++){
-  for (let j = 0; j < arrays[i].length; j++){
-    sum += arrays[i][j];
+for (let key in data) {
+  let sum = 0;
+
+  for (let i = 0; i < data[key].length; i++) {
+    sum += data[key][i];
   }
+  result[key] = sum
+}
+console.log(result);
 
+// 2. ** Count word occurrences in array **
+//   - Input:["apple", "banana", "apple", "orange", "banana", "apple"]
+
+
+
+const arr = ["apple", "banana", "apple", "orange", "banana", "apple"];
+
+let store = {};
+
+for (let i = 0; i < arr.length; i++) {
+  let word = arr[i];
+
+
+  if (store[word]) {
+    store[word] += 1;
+  }
+  else {
+    store[word] = 1;
+  }
 }
 
-console.log( "sum 0f arrays:" ,sum);
+console.log(store);
 
+const array = ["apple", "banana", "apple", "orange", "banana", "apple"];
 
-const arr = [3, 5, 7];
+let store1 ={};
 
- let total =0;
-  for(let i = 0; i <arr.length; i++){
-    total += arr[i];
+for(let i = 0; i < array.length; i++){
+  let str = array[i];
+
+  if(store1[str]){
+    store1[str] += 1;
   }
+  else {
+    store1[str] = 1;
+  }
+}
+console.log(store1);
 
-  console.log(total);
+
+
+// 3. ** Swap keys and values of object **
+//   - Input: { a: "x", b: "y", c: "z" }
+
+const swap = { a: "x", b: "y", c: "z" };
+
+let storeswap = {};
+
+for (let key in swap) {
+  let value = swap[key];
+
+  storeswap[value] = key; 
+}
+
+console.log(storeswap);
+
