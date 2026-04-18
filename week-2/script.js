@@ -34,7 +34,6 @@ let store = {};
 for (let i = 0; i < arr.length; i++) {
   let word = arr[i];
 
-
   if (store[word]) {
     store[word] += 1;
   }
@@ -73,8 +72,40 @@ let storeswap = {};
 for (let key in swap) {
   let value = swap[key];
 
-  storeswap[value] = key; 
+  storeswap[value] = key;
 }
 
 console.log(storeswap);
+
+// 4. **Find the largest value key**
+//     - Input:{ a: 10, b: 50, c: 20 }
+
+const largest = { a: 10, b: 50, c: 20 };
+
+let large = "";
+let lowest = -Infinity;
+
+for (let key in largest){
+   if(largest[key] > lowest){
+     lowest = largest[key];
+    large = key;
+   }
+}
+console.log(large);
+
+const lgt = { a: 20, b: 60, x: 90 };
+
+let grstvlaue = "";
+ let max = -Infinity;
+
+ for(let key in lgt){
+  if(lgt[key] > max){
+    max = lgt[key];
+    grstvlaue = key ;
+  }
+ }
+ console.log(grstvlaue);
+
+// 5. ** Flatten object of arrays into one array **
+//   - Input: { fruits: ["apple", "banana"], veggies: ["carrot", "pea"] }
 
