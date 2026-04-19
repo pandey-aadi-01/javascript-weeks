@@ -273,21 +273,92 @@
 // console.log(result);
 
 
-const  data={
-   fruits: ["apple", "banana"],
-    veggies: ["carrot", "pea"]
-  };
+// const  data={
+//    fruits: ["apple", "banana"],
+//     veggies: ["carrot", "pea"]
+//   };
 
-  let store = [];
+//   let store = [];
 
-  for( let key in data){
-     let arr = data[key];
+//   for( let key in data){
+//      let arr = data[key];
 
-     for(let i = 0; i < arr.length; i++){
-      store.push(arr[i]);
+//      for(let i = 0; i < arr.length; i++){
+//       store.push(arr[i]);
 
-     }
+//      }
 
-  }
-console.log(store);
+//   }
+// console.log(store);
 
+
+
+// const data = {
+//   fruits: ["apple", "banana"],
+//   veggies: ["carrot", "pea"]
+// };
+
+// let store = [];
+// for (let key in data) {
+//   let arr = data[key];
+//   for (let i = 0; i < arr.length; i++) {
+//     store.push(arr[i])
+//   }
+
+// }
+// console.log(store);
+
+// 6. ** Group people by city **
+//   - Input:[
+// { name: "A", city: "Delhi" },
+// { name: "B", city: "Mumbai" },
+// { name: "C", city: "Delhi" }
+// ]
+
+// const data = [
+//   { name: "A", city: "Delhi" },
+//   { name: "B", city: "Mumbai" },
+//   { name: "C", city: "Delhi" }
+// ]
+// let value = [];
+
+// for (let key in data) {
+//   let pbc = data[key];
+//   for (let i = 0; i < pbc.length; i++) {
+//     if (pbc === key) {
+
+//       value[pbc] = key;
+//     }
+//     else {
+//       value;
+//     }
+//   }
+// }
+// console.log(value);
+
+// const arr = [
+//   { name: "A", city: "Delhi" },
+// ]
+
+// let result = {};
+
+// let person = arr[0];
+// let city = person.city;
+// let name = person.name;
+
+// result[city] = [name];
+
+// console.log(result);
+
+const arr = [
+  { name: "B", city: "Mumbai" },
+  { name: "C", city: "Delhi" }
+]
+let result =[];
+let person =arr[0];
+result[person.city] = [person.name];
+
+let person2 = arr[1]
+result[person.city] = [person2.name];
+
+console.log(result)

@@ -46,12 +46,12 @@ console.log(store);
 
 const array = ["apple", "banana", "apple", "orange", "banana", "apple"];
 
-let store1 ={};
+let store1 = {};
 
-for(let i = 0; i < array.length; i++){
+for (let i = 0; i < array.length; i++) {
   let str = array[i];
 
-  if(store1[str]){
+  if (store1[str]) {
     store1[str] += 1;
   }
   else {
@@ -85,27 +85,52 @@ const largest = { a: 10, b: 50, c: 20 };
 let large = "";
 let lowest = -Infinity;
 
-for (let key in largest){
-   if(largest[key] > lowest){
-     lowest = largest[key];
+for (let key in largest) {
+  if (largest[key] > lowest) {
+    lowest = largest[key];
     large = key;
-   }
+  }
 }
 console.log(large);
 
 const lgt = { a: 20, b: 60, x: 90 };
 
 let grstvlaue = "";
- let max = -Infinity;
+let max = -Infinity;
 
- for(let key in lgt){
-  if(lgt[key] > max){
+for (let key in lgt) {
+  if (lgt[key] > max) {
     max = lgt[key];
-    grstvlaue = key ;
+    grstvlaue = key;
   }
- }
- console.log(grstvlaue);
+}
+console.log(grstvlaue);
 
 // 5. ** Flatten object of arrays into one array **
 //   - Input: { fruits: ["apple", "banana"], veggies: ["carrot", "pea"] }
+
+
+const onearray = {
+  fruits: ["apple", "banana"],
+  veggies: ["carrot", "pea"]
+}
+
+let storeingarr = [];
+
+for( let key in onearray){
+   let arr = onearray[key];
+    for( let i = 0; i < arr.length; i++){
+      storeingarr.push(arr[i]);
+    }
+}
+
+console.log(storeingarr);
+
+// 6. ** Group people by city **
+//   - Input:[
+// { name: "A", city: "Delhi" },
+// { name: "B", city: "Mumbai" },
+// { name: "C", city: "Delhi" }
+// ]
+
 
