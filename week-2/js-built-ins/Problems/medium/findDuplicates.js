@@ -18,3 +18,15 @@
   - `npm run test-duplicates`
 */
 
+// Level 1 (Warm-up)
+// Remove something
+// Then multiply
+const arr = [1, 2, 3, 4];
+
+let num = arr
+  .filter(n => n > 2)
+  .map(n => n * 2);
+
+console.log(num)
+
+
