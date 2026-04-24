@@ -20,7 +20,7 @@ const fun = num.map(function (n) {
 console.log(fun)
 
 
-const num1= [3, 6, 9];
+const num1 = [3, 6, 9];
 
 const funs = function (n) {
   return n * 2;
@@ -38,41 +38,6 @@ const str = [1, 2, 3];
 const tostr = str.map(n => n.toString());
 
 console.log(tostr)
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Q3.Keep only even numbers(filter)
