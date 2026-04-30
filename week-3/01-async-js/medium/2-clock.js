@@ -6,3 +6,7 @@
 //  - HH:MM::SS (Eg. 13:45:23)
 
 //  - HH:MM::SS AM/PM (Eg 01:45:23 PM)
+
+
+const now = new Date(); // Current date and time
+console.log(now.toISOString()); // Outputs the date in ISO format
