@@ -8,7 +8,6 @@
 // When the Promise rejects, the callback should be called with the error.
 
 
-const { partialDeepStrictEqual } = require("assert");
 const fs = require("fs");
 
 function readFileP(callfn) {
