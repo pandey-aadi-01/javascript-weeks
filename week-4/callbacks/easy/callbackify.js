@@ -58,11 +58,11 @@ const readFileCb = callbackify(readFileP)
 readFileCb("a.txt", function (err, data) {
 
   if (err) {
-    console.log("Error :", err)
+    console.log("Error catch :", err)
   }
 
   else {
-    console.log("Success :", data)
+    console.log("data printed :", data)
   }
 
 })
