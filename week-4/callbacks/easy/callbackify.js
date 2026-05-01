@@ -7,30 +7,110 @@
 // When the Promise resolves, the callback should be called with `(null, data)`.
 // When the Promise rejects, the callback should be called with the error.
 
+
+const { partialDeepStrictEqual } = require("assert");
 const fs = require("fs");
 
-function callbackify(fn) {
+function readFileP(callfn) {
 
   return new Promise(function (resolve, reject) {
-    fs.readFile(fn, "utf-8", function (err, data) {
+
+    fs.readFile(callfn, "utf-8", function (err, data) {
+
       if (err) {
         reject(err)
-      } else {
+      }
+      else {
         resolve(data)
       }
+
     })
+
   })
 
 }
-const readFileCallback = callbackify(readFilePromise);
 
-readFileCallback("a.txt", function (err, data) {
-  if (err) {
-    console.log("Error:", err);
-  } else {
-    console.log("Success:", data);
+
+function callbackify(fn) {
+
+  return function (callfn, callback) {
+
+    fn(callfn).then(function (data) {
+
+      callback(null, data)
+
+    }).catch(function (err) {
+
+      callback(err)
+
+    })
+
   }
-});
+
+}
+
+
+
+const readFileCb = callbackify(readFileP)
+
+
+
+readFileCb("a.txt", function (err, data) {
+
+  if (err) {
+    console.log("Error :", err)
+  }
+
+  else {
+    console.log("Success :", data)
+  }
+
+})
+
+
+
+/*
+This code is written by me for learning purposes.
+
+I am practicing:
+
+* Promise
+* Callback
+* callbackify concept
+
+I tried different versions to understand how it works.
+*/
+
+
+// const fs = require("fs");
+
+// function callbackify(fn) {
+
+//   return new Promise(function (resolve, reject) {
+//     fs.readFile(fn, "utf-8", function (err, data) {
+//       if (err) {
+//         reject(err)
+//       } else {
+//         resolve(data)
+//       }
+//     })
+//   })
+
+// }
+// const readFileCallback = callbackify(readFilePromise);
+
+// readFileCallback("a.txt", function (err, data) {
+//   if (err) {
+//     console.log("Error:", err);
+//   } else {
+//     console.log("Success:", data);
+//   }
+// });
+
+
+
+
+
 
 
 // const fs = require("fs");
@@ -51,6 +131,7 @@ readFileCallback("a.txt", function (err, data) {
 //   .catch(function (err) {
 //     console.log("Error:", err);
 //   });
+
 
 
 
