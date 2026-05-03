@@ -4,3 +4,27 @@
 // in milliseconds, a value, and a callback function.
 // The function should wait for the given time and then invoke the callback
 // with `null` as the first argument and the provided value as the second argument.
+
+
+function delay(ms, value, callback) {
+
+  setTimeout(function () {
+
+    callback(null, value)
+
+  }, ms)
+
+}
+
+
+delay(2000, "Hello Adi", function (err, data) {
+
+  if (err) {
+    console.log("Error :", err)
+  }
+
+  else {
+    console.log("Result :", data)
+  }
+
+})
