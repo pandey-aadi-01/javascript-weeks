@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .header {
+      width: 1200px;
+      gap: 10px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .left-center {
+      background-color: red;
+      display: grid;
+      place-items: center;
+
+    }
+
+    .right {
+      grid-template-columns: 1fr 1fr 1fr;
+      display: grid;
+      /* text-align: center; */
+      gap: 20px;
+      place-items: center;
+      background-color: blue;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="header">
+
+    <div class="container">
+      <div class="left-center">
+        <div class="left">
+          <h3>left</h3>
+        </div>
+        <p>text text text text text text text text text text text text text text text text text</p>
+
+      </div>
+    </div>
+
+    <div class="right">
+
+      <div>Col 1</div>
+      <div>Col 2</div>
+      <div>Col 3</div>
+
+      <div>Col 1</div>
+      <div>Col 2</div>
+      <div>Col 3</div>
+
+      <div>Col 1</div>
+      <div>Col 2</div>
+      <div>Col 3</div>
+
+    </div>
+
+
+  </div>
+  </div>
+
+</body>
+
+</html>
