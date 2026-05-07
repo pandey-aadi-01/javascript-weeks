@@ -431,3 +431,41 @@ int main() {
 
     return 0;
 }
+
+/*
+I - Add Last Digits
+
+You are given two integers N
+ and M
+. Your task is to find the sum of the last digits of N
+ and M
+.
+
+Input
+A single line containing two integers N
+ and M
+ (1≤N,M≤1000)
+.
+
+Output
+Print a single integer — the sum of the last digits of N
+ and M
+.
+
+Example
+InputCopy
+169 125
+OutputCopy
+14
+
+*/
+
+#include<iostream>
+using namespace std;
+int main(){
+    int N, M;
+    cin>> N>> M;
+    int aadi = N % 10;
+    int subh = M % 10;
+    cout <<aadi+subh <<endl;
+}
