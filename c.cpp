@@ -469,3 +469,45 @@ int main(){
     int subh = M % 10;
     cout <<aadi+subh <<endl;
 }
+
+/*
+J - Even or Odd
+
+You are given an integer N
+. Your task is to determine whether the number is even or odd.
+
+Input
+A single integer N
+ (1≤N≤109)
+.
+
+Output
+Even if N
+ is even
+Odd if N
+ is odd
+Examples
+InputCopy
+20
+OutputCopy
+Even
+InputCopy
+3
+OutputCopy
+Odd
+
+*/
+ #include<iostream>
+ using namespace std;
+
+ int main()
+ {
+     int n;
+     cin>>n;
+     if(n % 2 ==0){
+         cout <<"Even" <<endl;
+     }
+         else{
+             cout <<"Odd" <<endl;
+     }
+ }
