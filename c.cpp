@@ -370,4 +370,64 @@ cout<<N<<" * "<<M<<" = "<<N*M<<endl;
 cout<<N<<" / "<<M<<" = "<<N/M<<endl;
 cout<<N<<" % "<<M<<" = "<<N%M<<endl;
 }
- 
+
+
+/*
+H2 - Calculator - II
+
+You are given two integers N
+ and M
+. Your task is to compute and print the results of the following operations:
+
+N+M
+N−M
+N×M
+N÷M
+ (integer division)
+NmodM
+Input
+Two integers N
+ and M
+, each given on a separate line (1≤N,M≤109)
+.
+
+Output
+Print five results in the following format as shown in the example.
+
+Example
+InputCopy
+1000000000
+1000000000
+OutputCopy
+1000000000 + 1000000000 = 2000000000
+
+1000000000 - 1000000000 = 0
+
+1000000000 * 1000000000 = 1000000000000000000
+
+1000000000 / 1000000000 = 1
+
+1000000000 % 1000000000 = 0
+
+
+
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long N, M;
+    cin >> N >> M;
+
+    cout << N << " + " << M << " = " << N + M << endl << endl;
+    cout << N << " - " << M << " = " << N - M << endl << endl;
+    cout << N << " * " << M << " = " << N * M << endl << endl;
+
+    if (M != 0) {
+        cout << N << " / " << M << " = " << N / M << endl << endl;
+        cout << N << " % " << M << " = " << N % M << endl;
+    }
+
+    return 0;
+}
