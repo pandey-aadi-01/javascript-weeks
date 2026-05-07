@@ -270,3 +270,55 @@ cout<<N<<" * "<<M<<" = "<<N*M<<endl;
 cout<<N<<" / "<<M<<" = "<<N/M<<endl;
 cout<<N<<" % "<<M<<" = "<<N%M<<endl;
 }
+
+
+/*F. Rectangle
+You are given the length and breadth of a rectangle. Your task is to calculate its area and perimeter.
+
+The formulas are:
+
+Area =
+ length ×
+ breadth
+Perimeter =
+ 2×(length+breadth)
+Input
+A single line containing two integers length and breadth (1≤length,breadth≤1000)
+.
+
+Output
+You are given the length and breadth of a rectangle. Your task is to calculate its area and perimeter.
+
+The formulas are:
+
+Area =
+ length ×
+ breadth
+Perimeter =
+ 2×(length+breadth)
+Example
+InputCopy
+5 7
+OutputCopy
+Area = 35
+Perimeter = 24
+
+
+
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+
+
+    cout<<"Area = " <<a*b<<endl;
+    cout<<"Perimeter = " <<2*(a+b)<< endl;
+
+
+
+}
