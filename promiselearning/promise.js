@@ -69,14 +69,49 @@
 // one();
 
 
-function a() {
-  console.log("A");
+// function a() {
+//   console.log("A");
 
-}
+// }
 
-function b() {
+// function b() {
+//   a();
+// }
+
+// b();
+
+
+// function greet(name, callback) {
+//   console.log(name);
+
+//   callback();
+// }
+
+// function bye() {
+//   console.log("Bye");
+// }
+
+// greet("Adi", bye);
+
+
+// function greet(name, callback) {
+//   console.log(name);
+//   callback();
+// }
+
+// function bye(){
+//   console.log("bye");
+// }
+
+// greet("adii",bye);
+
+
+function test(a){
   a();
 }
 
-b();
+function hello(){
+  console.log("Hello");
+}
 
+test(hello);
